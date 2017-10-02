@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import career.parascollectionbackend.dao.CategoryDao;
-import career.parascollectionbackend.dto.Category;
+import career.parascollectionbackend1.dao.CategoryDao;
+import career.parascollectionbackend1.dto.Category;
 
 @Controller
 public class Parascontroller {

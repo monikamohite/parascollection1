@@ -1,4 +1,5 @@
-package career.parascollectionbackend.config;
+package career.parascollectionbackend1.config;
+
 
 import java.util.Properties;
 
@@ -15,7 +16,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 
 @Configuration
-@ComponentScan(basePackages={"career.parascollectionbackend.dto"})
+@ComponentScan(basePackages={"career.parascollectionbackend1.dto"})
 @EnableTransactionManagement
 public class HibernateConfig {
 	private final static String DATABASE_URL="jdbc:h2:tcp://localhost/~/monika";
@@ -42,7 +43,7 @@ public SessionFactory getSessionFactory(DataSource dataSource)
 {
 		LocalSessionFactoryBuilder builder=new LocalSessionFactoryBuilder(dataSource);  
 		builder.addProperties(getHibernateProperties());
-		builder.scanPackages("career.parascollectionbackend");
+		builder.scanPackages("career.parascollectionbackend1");
 		return builder.buildSessionFactory();
 	
 		
@@ -68,3 +69,4 @@ public SessionFactory getSessionFactory(DataSource dataSource)
 
 
 }
+

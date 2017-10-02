@@ -1,4 +1,4 @@
-package career.parascollectionbackend.dto;
+package career.parascollectionbackend1.dto;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
